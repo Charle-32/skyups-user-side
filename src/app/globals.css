@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --background: #e2f4ff;
+  --foreground: #171717;
+  --bordercolor: #8a8a8a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+    --bordercolor: #8a8a8a;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background) !important;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+label{
+  font-size: 14px;
+}
+
+.main_container {
+  background: rgba(255, 255, 255, .5);
+}
+
+input {
+  background-color: transparent !important;
+  border-color: var(--bordercolor) !important;
+  outline: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.quantity_input {
+  border: 1px solid var(--bordercolor) !important;
+}
+
+.css-13cymwt-control {
+  background-color: transparent !important;
+  border-color: var(--bordercolor) !important;
+  box-shadow: none !important;
+}
+
+.css-t3ipsp-control {
+  background-color: transparent !important;
+  border-color: var(--bordercolor) !important;
+  box-shadow: none !important;
+}
+
+.css-13cymwt-control svg {
+  color: #808080;
+}
+
+.pointer {
+  cursor: pointer;
+}
