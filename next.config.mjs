@@ -14,7 +14,7 @@ const nextConfig = {
         return [
             {
                 source: "/api/:path*",
-                destination: "https://api.skyups.com/api/:path*", // Proxy to external API
+                destination: "http://api.skyups.com/api/:path*", // Proxy to external API
             },
         ];
     },
