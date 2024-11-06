@@ -2,6 +2,7 @@
 const nextConfig = {
     reactStrictMode: false,
     trailingSlash: true,
+    disableTelemetry:process.env.NEXT_PUBLIC_HIDE_VERCEL_BANNER,
     compiler: {
         styledComponents: true,
     },
