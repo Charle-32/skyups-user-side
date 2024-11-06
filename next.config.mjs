@@ -10,6 +10,17 @@ const nextConfig = {
         unoptimized: true,
         domains: ["storage.googleapis.com"],
     },
+
+  async redirects() {
+    return [
+      {
+        source: "/(.*)",
+        has: [{ type: "host", value: "api.skyups.com" }],
+        destination: "https://api.skyups.com/api/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
